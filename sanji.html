@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sanji</title>
+    <link rel="stylesheet" href="visual.css">
+</head>
+<body>
+    <header>
+        <h1>sanji</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="carrito.html" ><img src="img/carrito.png" alt="carrito" style="width: 30px;cursor:pointer;"></a>
+        </nav>
+    </header>
+    
+    <section class="producto-detalle">
+    
+        <!-- Carrusel -->
+        <div class="carousel">
+            <button class="prev" onclick="cambiarImagen(-1)">&#10094;</button>
+    
+            <img id="imagenActual" src="img/sanji2.jpg" class="imagen-producto">
+    
+            <button class="next" onclick="cambiarImagen(1)">&#10095;</button>
+        </div>
+    
+        <!-- Info del producto -->
+        <div class="info">
+            <h2>Amigurumi de sanji</h2>
+            <p class="precio">$30'000</p>
+            <p>
+                Este es un producto de excelente calidad con características únicas.
+                Ideal para uso diario y con materiales resistentes.
+            </p>
+    
+            <button class="btn" onclick="agregarAlCarrito(3, 'sanji', 30000, 'img/sanji2.jpg')">
+                Agregar al carrito
+            </button>
+        </div>
+    </section>
+    
+    <script src="app.js"></script>
+    
+    <script>
+    // --- Carrusel de imágenes ---
+    let imagenes = [
+        "img/sanji2.jpg",
+        "img/sanji.jpg",
+        "img/sanji3.jpg"
+    ];
+    
+    let index = 0;
+    
+    function cambiarImagen(direccion) {
+        index += direccion;
+    
+        if (index < 0) index = imagenes.length - 1;
+        if (index >= imagenes.length) index = 0;
+    
+        document.getElementById("imagenActual").src = imagenes[index];
+    }
+    </script>
+</body>
+</html>

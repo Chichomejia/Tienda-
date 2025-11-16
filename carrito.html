@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrito</title>
+    <link rel="stylesheet" href="visual.css">
+</head>
+<body>
+  
+
+        <header>
+            <h1>Carrito</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="carrito.html" ><img src="img/carrito.png" alt="carrito" style="width: 30px;cursor:pointer;"></a>
+            </nav>
+        </header>
+        
+        <section>
+            <h2>Tu Carrito</h2>
+        
+            <div id="lista-carrito"></div>
+        
+            <h2>Total: $<span id="total">0</span></h2>
+        </section>
+        
+        <script src="app.js"></script>
+        <script>
+            mostrarCarrito();
+        </script>
+        
+</body>
+</html>

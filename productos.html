@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productos</title>
+    <link rel="stylesheet" href="visual.css">
+</head>
+<body>
+    <header>
+        <h1>Productos</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="carrito.html" ><img src="img/carrito.png" alt="carrito" style="width: 30px;cursor:pointer;"></a>
+        </nav>
+    </header>
+    
+    <section class="grid">
+    
+        <div class="card">
+            <img src="img/zoro.jpg" alt="Producto 1">
+
+            <h3>Amigurumi de zoro</h3>
+            <p>$30'000</p>
+            <a href="zoro.html">ver mas</a>
+            <button class="btn"
+                onclick="agregarAlCarrito(1, 'zoro', 30000, 'img/zoro.jpg')">
+                Agregar al carrito
+            </button>
+        </div>
+    
+        <div class="card">
+            <img src="img/Luffy.jpg" alt="Producto 2">
+            <h3>amigurumi de Luffy</h3>
+            <p>$30'000</p>
+            <a href="luffy.html">ver mas</a>
+            <button class="btn"
+                onclick="agregarAlCarrito(2, 'luffy', 30000, 'img/Luffy.jpg')">
+                Agregar al carrito
+            </button>
+        </div>
+            <div class="card">
+                <img src="img/chopper.jpg" alt="Producto 5">
+    
+                <h3>Amigurumi de chopper</h3>
+                <p>$30'000</p>
+                <a href="chopa.html">ver mas</a>
+                <button class="btn"
+                    onclick="agregarAlCarrito(5, 'chopper', 30000, 'img/chopper.jpg')">
+                    Agregar al carrito
+                </button>
+            </div>
+        
+            <div class="card">
+                <img src="img/sanji2.jpg" alt="Producto 3">
+                <h3>amigurumi de sanji</h3>
+                <p>$30'000</p>
+                <a href="sanji.html">ver mas</a>
+                <button class="btn"
+                    onclick="agregarAlCarrito(3, 'sanji', 30000, 'img/sanji2.jpg')">
+                    Agregar al carrito
+                </button>
+            </div>
+                <div class="card">
+                    <img src="img/jimbei.jpg" alt="Producto 4">
+        
+                    <h3>Amigurumi de Jinmbei</h3>
+                    <p>$30'000</p>
+                    <a href="jimbei.html">ver mas</a>
+                    <button class="btn"
+                        onclick="agregarAlCarrito(4, 'jinmbei', 30000, 'img/jimbei.jpg')">
+                        Agregar al carrito
+                    </button>
+                </div>
+           
+        </div>
+    
+    </section>
+    
+    <script src="app.js"></script>
+</body>
+</html>
